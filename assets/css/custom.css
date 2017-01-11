@@ -1,0 +1,101 @@
+html {
+  height: 100%;
+  background-color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: white;
+  font-size: 16px;
+}
+
+.btn {
+  font-weight: bold;
+}
+
+
+.userInputWrap {
+  padding-top: 2%;
+  font-size: 1em;
+}
+
+.userInput {
+  max-width: 100%;
+}
+
+.search {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.filter {
+  margin-top: 5%;
+  font-size: 1em;
+}
+
+.filter > .md-button {
+  font-size: 0.9em;
+}
+
+.filter > .filter-search {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.content {
+  max-width: 65%;
+  margin: 2% auto;
+  font-size: 1em;
+}
+
+.titles {
+  color: black;
+  font-weight: bold;
+  background-color: white;
+  border-bottom: 2px solid rgb(33, 150, 243);
+}
+
+.titles-display {
+  text-align: center;
+  max-width: 33%;
+}
+
+.item {
+  color: black;
+  background-color: white;
+  max-width: 33%;
+  text-align: center;
+}
+
+.item-display {
+  background-color: white;
+  border: 1px solid rgb(200, 200, 200);
+}
+
+.track {
+  padding: 1% 0;
+}
+
+@media only screen and (max-width: 900px) {
+
+  body {
+    font-size: 14px;
+  }
+
+  .content {
+    max-width: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  body {
+    font-size: 12px;
+  }
+
+  .content {
+    max-width: 98%;
+  }
+}
