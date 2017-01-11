@@ -1,0 +1,40 @@
+<md-content class="content">
+    <div layout="column">
+        <div flex>
+            <div class="titles" layout="row" layout-align="space-around start">
+                <div layout-margin class="titles-display">
+                    Artist
+                </div>
+                <div layout-margin class="titles-display">
+                    Popularity
+                </div>
+                <div layout-margin class="titles-display">
+                    Top 5 Tracks
+                </div>
+            </div>
+            <div layout="row" class="item-display" layout-align="space-around center" layout-margin layout-fill ng-repeat="artist in artists | orderBy: 'popularity' : order | filter: search track by $index">
+                <div flex class="item">
+                    <div layout="column" class="name">
+                        <div flex="33" flex-md="25" flex-sm="10">
+                            {{artist.name}}
+                        </div>
+                    </div>
+                </div>
+                <div flex class="item">
+                    <div layout="column">
+                        <div flex="33" flex-md="25" flex-sm="10" class="popularity">
+                            {{artist.popularity}}
+                        </div>
+                    </div>
+                </div>
+                <div flex class="item">
+                    <div layout="column">
+                        <div flex="33" flex-md="50" flex-sm="80" class="track" ng-repeat="track in artist.tracks | limitTo: 5">
+                            {{track.name}},
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</md-content>
