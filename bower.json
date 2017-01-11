@@ -1,0 +1,29 @@
+{
+  "name": "popular on spotify",
+  "homepage": "https://github.com/relentless-coder/popular-on-spotify.git",
+  "authors": [
+    "contact@ayushdevelops.com"
+  ],
+  "description": "an app that lists popular artists on spotify",
+  "main": "index.html",
+  "keywords": [
+    "ayush",
+    "angular.js",
+    "popular",
+    "on",
+    "spotify"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.1",
+    "angular-material": "^1.1.1"
+  }
+}
